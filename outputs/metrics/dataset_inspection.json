@@ -1,0 +1,323 @@
+{
+  "raw_header": [
+    "Timestamp",
+    "From Bank",
+    "Account",
+    "To Bank",
+    "Account",
+    "Amount Received",
+    "Receiving Currency",
+    "Amount Paid",
+    "Payment Currency",
+    "Payment Format",
+    "Is Laundering"
+  ],
+  "duplicate_header_names": [
+    "Account"
+  ],
+  "shape": [
+    5078345,
+    11
+  ],
+  "dtypes": {
+    "timestamp": "str",
+    "sender_bank": "str",
+    "sender_account": "str",
+    "receiver_bank": "str",
+    "receiver_account": "str",
+    "amount_received": "float64",
+    "receiving_currency": "str",
+    "amount_paid": "float64",
+    "payment_currency": "str",
+    "payment_format": "str",
+    "label": "int64"
+  },
+  "missing": {
+    "timestamp": 0,
+    "sender_bank": 0,
+    "sender_account": 0,
+    "receiver_bank": 0,
+    "receiver_account": 0,
+    "amount_received": 0,
+    "receiving_currency": 0,
+    "amount_paid": 0,
+    "payment_currency": 0,
+    "payment_format": 0,
+    "label": 0
+  },
+  "exact_duplicates": 9,
+  "duplicates_ignoring_label": 9,
+  "laundering_rows_in_duplicate_groups": 0,
+  "timestamp": {
+    "unparseable": 0,
+    "min": "2022-09-01 00:00:00",
+    "max": "2022-09-18 16:18:00",
+    "rows_out_of_order": 2418736,
+    "minute_resolution": true,
+    "max_rows_same_minute": 11193
+  },
+  "daily": {
+    "2022-09-01": {
+      "rows": 1114921.0,
+      "laundering": 322.0,
+      "laundering_rate_%": 0.0289
+    },
+    "2022-09-02": {
+      "rows": 754449.0,
+      "laundering": 408.0,
+      "laundering_rate_%": 0.0541
+    },
+    "2022-09-03": {
+      "rows": 207382.0,
+      "laundering": 391.0,
+      "laundering_rate_%": 0.1885
+    },
+    "2022-09-04": {
+      "rows": 207430.0,
+      "laundering": 407.0,
+      "laundering_rate_%": 0.1962
+    },
+    "2022-09-05": {
+      "rows": 482650.0,
+      "laundering": 471.0,
+      "laundering_rate_%": 0.0976
+    },
+    "2022-09-06": {
+      "rows": 482089.0,
+      "laundering": 531.0,
+      "laundering_rate_%": 0.1101
+    },
+    "2022-09-07": {
+      "rows": 482751.0,
+      "laundering": 497.0,
+      "laundering_rate_%": 0.103
+    },
+    "2022-09-08": {
+      "rows": 482773.0,
+      "laundering": 539.0,
+      "laundering_rate_%": 0.1116
+    },
+    "2022-09-09": {
+      "rows": 654467.0,
+      "laundering": 514.0,
+      "laundering_rate_%": 0.0785
+    },
+    "2022-09-10": {
+      "rows": 208325.0,
+      "laundering": 442.0,
+      "laundering_rate_%": 0.2122
+    },
+    "2022-09-11": {
+      "rows": 396.0,
+      "laundering": 232.0,
+      "laundering_rate_%": 58.5859
+    },
+    "2022-09-12": {
+      "rows": 281.0,
+      "laundering": 170.0,
+      "laundering_rate_%": 60.4982
+    },
+    "2022-09-13": {
+      "rows": 184.0,
+      "laundering": 106.0,
+      "laundering_rate_%": 57.6087
+    },
+    "2022-09-14": {
+      "rows": 121.0,
+      "laundering": 70.0,
+      "laundering_rate_%": 57.8512
+    },
+    "2022-09-15": {
+      "rows": 46.0,
+      "laundering": 28.0,
+      "laundering_rate_%": 60.8696
+    },
+    "2022-09-16": {
+      "rows": 46.0,
+      "laundering": 26.0,
+      "laundering_rate_%": 56.5217
+    },
+    "2022-09-17": {
+      "rows": 23.0,
+      "laundering": 15.0,
+      "laundering_rate_%": 65.2174
+    },
+    "2022-09-18": {
+      "rows": 11.0,
+      "laundering": 8.0,
+      "laundering_rate_%": 72.7273
+    }
+  },
+  "label_counts": {
+    "laundering": 5177,
+    "normal": 5073168
+  },
+  "accounts": {
+    "account_ids_under_multiple_banks": 8,
+    "distinct_nodes_bank_account": 515088,
+    "non_hex_account_ids": 0,
+    "non_numeric_bank_codes": 0,
+    "self_transfers": 591212,
+    "laundering_self_transfers": 11,
+    "distinct_directed_pairs": 1015736
+  },
+  "payment_format": {
+    "ACH": {
+      "rows": 600797,
+      "laundering": 4483
+    },
+    "Bitcoin": {
+      "rows": 146091,
+      "laundering": 56
+    },
+    "Cash": {
+      "rows": 490891,
+      "laundering": 108
+    },
+    "Cheque": {
+      "rows": 1864331,
+      "laundering": 324
+    },
+    "Credit Card": {
+      "rows": 1323324,
+      "laundering": 206
+    },
+    "Reinvestment": {
+      "rows": 481056,
+      "laundering": 0
+    },
+    "Wire": {
+      "rows": 171855,
+      "laundering": 0
+    }
+  },
+  "payment_currencies": {
+    "US Dollar": 1895172,
+    "Euro": 1168297,
+    "Swiss Franc": 234860,
+    "Yuan": 213752,
+    "Shekel": 192184,
+    "Rupee": 190202,
+    "UK Pound": 180738,
+    "Yen": 155209,
+    "Ruble": 155178,
+    "Bitcoin": 146066,
+    "Canadian Dollar": 140042,
+    "Australian Dollar": 136769,
+    "Mexican Peso": 110159,
+    "Saudi Riyal": 89014,
+    "Brazil Real": 70703
+  },
+  "receiving_currencies": {
+    "US Dollar": 1879341,
+    "Euro": 1172017,
+    "Swiss Franc": 237884,
+    "Yuan": 206551,
+    "Shekel": 194988,
+    "Rupee": 192065,
+    "UK Pound": 181255,
+    "Ruble": 157361,
+    "Yen": 156319,
+    "Bitcoin": 148151,
+    "Canadian Dollar": 141357,
+    "Australian Dollar": 138511,
+    "Mexican Peso": 111030,
+    "Saudi Riyal": 89971,
+    "Brazil Real": 71544
+  },
+  "amounts": {
+    "amount_paid_min": 1e-06,
+    "amount_paid_max": 1046302363293.48,
+    "zero_amount_paid": 0,
+    "negative_amount_paid": 0,
+    "same_currency_amount_mismatch": 0,
+    "cross_currency_rows": 72170,
+    "cross_currency_laundering": 0
+  },
+  "implied_fx_usd_per_unit": {
+    "Australian Dollar": {
+      "n": 1538,
+      "median": 0.7078142593664241,
+      "spread_pct": 41.935
+    },
+    "Bitcoin": {
+      "n": 1509,
+      "median": 11878.012822049264,
+      "spread_pct": 100.0
+    },
+    "Brazil Real": {
+      "n": 838,
+      "median": 0.17710085982186957,
+      "spread_pct": 24.055
+    },
+    "Canadian Dollar": {
+      "n": 2091,
+      "median": 0.7579776756972352,
+      "spread_pct": 40.0
+    },
+    "Euro": {
+      "n": 26898,
+      "median": 1.171783453144495,
+      "spread_pct": 50.0
+    },
+    "Mexican Peso": {
+      "n": 1203,
+      "median": 0.04729675412965999,
+      "spread_pct": 36.585
+    },
+    "Ruble": {
+      "n": 2104,
+      "median": 0.01285278475308409,
+      "spread_pct": 81.548
+    },
+    "Rupee": {
+      "n": 3113,
+      "median": 0.013615816672830953,
+      "spread_pct": 13.81
+    },
+    "Saudi Riyal": {
+      "n": 902,
+      "median": 0.26658846755351673,
+      "spread_pct": 0.06
+    },
+    "Shekel": {
+      "n": 2251,
+      "median": 0.2961207524209466,
+      "spread_pct": 68.932
+    },
+    "Swiss Franc": {
+      "n": 2727,
+      "median": 1.09289617402977,
+      "spread_pct": 9.462
+    },
+    "UK Pound": {
+      "n": 4261,
+      "median": 1.291655895215395,
+      "spread_pct": 7.143
+    },
+    "Yen": {
+      "n": 3072,
+      "median": 0.009487666423316044,
+      "spread_pct": 116.949
+    },
+    "Yuan": {
+      "n": 9222,
+      "median": 0.1493072123186574,
+      "spread_pct": 87.5
+    }
+  },
+  "currencies_without_usd_rate": [],
+  "patterns": {
+    "attempts_by_type": {
+      "FAN-OUT": 48,
+      "CYCLE": 54,
+      "GATHER-SCATTER": 51,
+      "STACK": 43,
+      "RANDOM": 41,
+      "BIPARTITE": 49,
+      "FAN-IN": 40,
+      "SCATTER-GATHER": 44
+    },
+    "transaction_lines": 3209
+  }
+}

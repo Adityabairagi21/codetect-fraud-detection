@@ -1,0 +1,17 @@
+model,data,risk level,transactions,share_%,laundering,laundering_rate_%
+Transaction-only IF,train (fitting rows),Low,270000,90.0,289,0.10703703703703704
+Transaction-only IF,train (fitting rows),Medium,21000,7.000000000000001,23,0.10952380952380952
+Transaction-only IF,train (fitting rows),High,7500,2.5,4,0.05333333333333334
+Transaction-only IF,train (fitting rows),Critical,1500,0.5,0,0.0
+Transaction-only IF,validation,Low,867391,89.83657527904624,947,0.10917798317021966
+Transaction-only IF,validation,Medium,67985,7.041276160746373,84,0.12355666691181877
+Transaction-only IF,validation,High,25703,2.6620860654506737,5,0.019452982142162394
+Transaction-only IF,validation,Critical,4442,0.4600624947567168,0,0.0
+Graph-enhanced IF,train (fitting rows),Low,270000,90.0,267,0.0988888888888889
+Graph-enhanced IF,train (fitting rows),Medium,21000,7.000000000000001,34,0.1619047619047619
+Graph-enhanced IF,train (fitting rows),High,7500,2.5,12,0.16
+Graph-enhanced IF,train (fitting rows),Critical,1500,0.5,3,0.2
+Graph-enhanced IF,validation,Low,872358,90.35101256212967,900,0.10316865323640066
+Graph-enhanced IF,validation,Medium,80043,8.290135584829331,122,0.15241807528453458
+Graph-enhanced IF,validation,High,12826,1.3284019715780393,14,0.10915328239513489
+Graph-enhanced IF,validation,Critical,294,0.030449881462961445,0,0.0

@@ -1,0 +1,196 @@
+{
+  "cleaning": {
+    "input_rows": 5078345,
+    "invalid_timestamp": 0,
+    "invalid_amount": 0,
+    "invalid_account_id": 0,
+    "missing_category": 0,
+    "dropped_invalid": 0,
+    "dropped_exact_duplicates": 9,
+    "output_rows": 5078336
+  },
+  "split_counts": {
+    "excluded": {
+      "rows": 1108,
+      "laundering": 655
+    },
+    "test": {
+      "rows": 862788,
+      "laundering": 956
+    },
+    "train": {
+      "rows": 2134000,
+      "laundering": 2208
+    },
+    "validation": {
+      "rows": 965521,
+      "laundering": 1036
+    },
+    "warmup": {
+      "rows": 1114919,
+      "laundering": 322
+    }
+  },
+  "fx": {
+    "base": "US Dollar",
+    "rates": {
+      "Australian Dollar": 0.7078142694295919,
+      "Bitcoin": 11875.0,
+      "Brazil Real": 0.17710085849756796,
+      "Canadian Dollar": 0.7579777149641926,
+      "Euro": 1.1717834539738337,
+      "Mexican Peso": 0.04729675387131328,
+      "Ruble": 0.012852809623318615,
+      "Rupee": 0.013615816131479592,
+      "Saudi Riyal": 0.26658846778824696,
+      "Shekel": 0.2961208153743032,
+      "Swiss Franc": 1.0928961745390218,
+      "UK Pound": 1.2916558996390584,
+      "Yen": 0.00948766603329224,
+      "Yuan": 0.14930721412993178,
+      "US Dollar": 1.0
+    },
+    "n_observations": {
+      "Australian Dollar": 927,
+      "Bitcoin": 909,
+      "Brazil Real": 500,
+      "Canadian Dollar": 1264,
+      "Euro": 16092,
+      "Mexican Peso": 708,
+      "Ruble": 1253,
+      "Rupee": 1856,
+      "Saudi Riyal": 541,
+      "Shekel": 1353,
+      "Swiss Franc": 1640,
+      "UK Pound": 2565,
+      "Yen": 1822,
+      "Yuan": 5542
+    },
+    "currencies_without_rate": [],
+    "method": "median of base-currency/other-currency amount ratio over cross-currency rows"
+  },
+  "feature_version": "2.0.0",
+  "features": [
+    "amount_usd",
+    "hour",
+    "payment_format",
+    "payment_currency",
+    "is_cross_currency",
+    "is_self_transfer",
+    "sender_out_count_24h",
+    "receiver_in_count_24h",
+    "sender_amount_deviation_24h",
+    "sender_amount_std_24h",
+    "pair_count_24h",
+    "sender_in_degree_24h",
+    "sender_out_degree_24h",
+    "receiver_in_degree_24h",
+    "receiver_out_degree_24h",
+    "sender_counterparties_24h",
+    "receiver_counterparties_24h",
+    "sender_txn_count_24h",
+    "receiver_txn_count_24h",
+    "sender_volume_24h",
+    "receiver_volume_24h"
+  ],
+  "nan_feature_values": 0,
+  "per_split_medians": {
+    "test": {
+      "amount_usd": 755.514858,
+      "hour": 11.0,
+      "is_cross_currency": 0.0,
+      "is_self_transfer": 0.0,
+      "sender_out_count_24h": 4.0,
+      "receiver_in_count_24h": 2.0,
+      "sender_amount_deviation_24h": 0.0,
+      "sender_amount_std_24h": 1.028073,
+      "pair_count_24h": 1.0,
+      "sender_in_degree_24h": 1.0,
+      "sender_out_degree_24h": 2.0,
+      "receiver_in_degree_24h": 1.0,
+      "receiver_out_degree_24h": 0.0,
+      "sender_counterparties_24h": 3.0,
+      "receiver_counterparties_24h": 2.0,
+      "sender_txn_count_24h": 6.0,
+      "receiver_txn_count_24h": 3.0,
+      "sender_volume_24h": 17600.893005,
+      "receiver_volume_24h": 5262.749002
+    },
+    "train": {
+      "amount_usd": 863.920299,
+      "hour": 11.0,
+      "is_cross_currency": 0.0,
+      "is_self_transfer": 0.0,
+      "sender_out_count_24h": 4.0,
+      "receiver_in_count_24h": 2.0,
+      "sender_amount_deviation_24h": 0.0,
+      "sender_amount_std_24h": 1.14446,
+      "pair_count_24h": 1.0,
+      "sender_in_degree_24h": 1.0,
+      "sender_out_degree_24h": 2.0,
+      "receiver_in_degree_24h": 1.0,
+      "receiver_out_degree_24h": 0.0,
+      "sender_counterparties_24h": 3.0,
+      "receiver_counterparties_24h": 1.0,
+      "sender_txn_count_24h": 6.0,
+      "receiver_txn_count_24h": 3.0,
+      "sender_volume_24h": 21584.70157,
+      "receiver_volume_24h": 5579.536029
+    },
+    "validation": {
+      "amount_usd": 801.557191,
+      "hour": 11.0,
+      "is_cross_currency": 0.0,
+      "is_self_transfer": 0.0,
+      "sender_out_count_24h": 5.0,
+      "receiver_in_count_24h": 2.0,
+      "sender_amount_deviation_24h": 0.0,
+      "sender_amount_std_24h": 1.194954,
+      "pair_count_24h": 2.0,
+      "sender_in_degree_24h": 1.0,
+      "sender_out_degree_24h": 2.0,
+      "receiver_in_degree_24h": 1.0,
+      "receiver_out_degree_24h": 0.0,
+      "sender_counterparties_24h": 3.0,
+      "receiver_counterparties_24h": 2.0,
+      "sender_txn_count_24h": 7.0,
+      "receiver_txn_count_24h": 4.0,
+      "sender_volume_24h": 20330.675024,
+      "receiver_volume_24h": 5023.916098
+    },
+    "warmup": {
+      "amount_usd": 1333.923131,
+      "hour": 7.0,
+      "is_cross_currency": 0.0,
+      "is_self_transfer": 0.0,
+      "sender_out_count_24h": 1.0,
+      "receiver_in_count_24h": 1.0,
+      "sender_amount_deviation_24h": 0.0,
+      "sender_amount_std_24h": 0.0,
+      "pair_count_24h": 0.0,
+      "sender_in_degree_24h": 0.0,
+      "sender_out_degree_24h": 0.0,
+      "receiver_in_degree_24h": 0.0,
+      "receiver_out_degree_24h": 0.0,
+      "sender_counterparties_24h": 1.0,
+      "receiver_counterparties_24h": 1.0,
+      "sender_txn_count_24h": 2.0,
+      "receiver_txn_count_24h": 2.0,
+      "sender_volume_24h": 4862.620106,
+      "receiver_volume_24h": 1874.932651
+    }
+  },
+  "timings_s": {
+    "load_s": 2.8,
+    "clean_s": 23.3,
+    "features_s": 22.9,
+    "history_tail_s": 0.0
+  },
+  "peak_working_set_gb": 7.13,
+  "history_window_minutes": 1440,
+  "history_tail": {
+    "rows": 208325,
+    "from": "2022-09-10 00:00:00",
+    "to": "2022-09-10 23:59:00"
+  }
+}

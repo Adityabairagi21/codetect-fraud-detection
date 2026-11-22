@@ -1,0 +1,26 @@
+# CoDetect - Stage 1 (Jupyter Notebook / ML pipeline) dependencies
+# Python 3.12, CPU only. Pinned to the versions installed and verified on 2026-11-21.
+
+# Data processing
+pandas==3.1.1
+numpy==2.5.5
+
+# Machine learning (Isolation Forest only) + persistence
+scikit-learn==1.9.1
+joblib==1.6.0
+
+# Graph analysis
+networkx==3.7
+
+# Visualization
+matplotlib==3.11.2
+seaborn==0.13.2
+plotly==7.1.0
+
+# Notebook execution
+jupyter
+ipykernel
+nbconvert==7.17.2
+
+# Testing
+pytest==9.2.0

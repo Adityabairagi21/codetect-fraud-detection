@@ -1,0 +1,123 @@
+{
+  "validation": [
+    {
+      "model": "Transaction-only IF",
+      "data": "validation",
+      "transactions": 965521,
+      "laundering": 1036,
+      "prevalence": 0.0010729958229805463,
+      "pr_auc": 0.0013353171219821938,
+      "roc_auc": 0.6248106092108332,
+      "suspicious_precision": 0.0001658649859014762,
+      "suspicious_recall": 0.004826254826254826,
+      "suspicious_f1": 0.0003207081235367692,
+      "suspicious_flagged": 30145,
+      "suspicious_tp": 5,
+      "suspicious_fp": 30140,
+      "suspicious_fn": 1031,
+      "suspicious_tn": 934345,
+      "critical_precision": 0.0,
+      "critical_recall": 0.0,
+      "critical_f1": 0.0,
+      "critical_flagged": 4442,
+      "critical_tp": 0,
+      "critical_fp": 4442,
+      "critical_fn": 1036,
+      "critical_tn": 960043
+    },
+    {
+      "model": "Graph-enhanced IF",
+      "data": "validation",
+      "transactions": 965521,
+      "laundering": 1036,
+      "prevalence": 0.0010729958229805463,
+      "pr_auc": 0.0017327302217921548,
+      "roc_auc": 0.7017030519398364,
+      "suspicious_precision": 0.0010127391930067693,
+      "suspicious_recall": 0.01833976833976834,
+      "suspicious_f1": 0.0019194827499116028,
+      "suspicious_flagged": 18761,
+      "suspicious_tp": 19,
+      "suspicious_fp": 18742,
+      "suspicious_fn": 1017,
+      "suspicious_tn": 945743,
+      "critical_precision": 0.0,
+      "critical_recall": 0.0,
+      "critical_f1": 0.0,
+      "critical_flagged": 2041,
+      "critical_tp": 0,
+      "critical_fp": 2041,
+      "critical_fn": 1036,
+      "critical_tn": 962444
+    }
+  ],
+  "test": [
+    {
+      "model": "Transaction-only IF",
+      "data": "test",
+      "transactions": 862788,
+      "laundering": 956,
+      "prevalence": 0.0011080358094920188,
+      "pr_auc": 0.001387684704490796,
+      "roc_auc": 0.6245673891592458,
+      "suspicious_precision": 0.00012020675561966583,
+      "suspicious_recall": 0.0031380753138075313,
+      "suspicious_f1": 0.00023154401265773936,
+      "suspicious_flagged": 24957,
+      "suspicious_tp": 3,
+      "suspicious_fp": 24954,
+      "suspicious_fn": 953,
+      "suspicious_tn": 836878,
+      "critical_precision": 0.0,
+      "critical_recall": 0.0,
+      "critical_f1": 0.0,
+      "critical_flagged": 4129,
+      "critical_tp": 0,
+      "critical_fp": 4129,
+      "critical_fn": 956,
+      "critical_tn": 857703
+    },
+    {
+      "model": "Graph-enhanced IF",
+      "data": "test",
+      "transactions": 862788,
+      "laundering": 956,
+      "prevalence": 0.0011080358094920188,
+      "pr_auc": 0.0016829948306256019,
+      "roc_auc": 0.6804955240866484,
+      "suspicious_precision": 0.0009386828160484481,
+      "suspicious_recall": 0.032426778242677826,
+      "suspicious_f1": 0.0018245490126835584,
+      "suspicious_flagged": 33025,
+      "suspicious_tp": 31,
+      "suspicious_fp": 32994,
+      "suspicious_fn": 925,
+      "suspicious_tn": 828838,
+      "critical_precision": 0.0004810776138550353,
+      "critical_recall": 0.0031380753138075313,
+      "critical_f1": 0.0008342602892102336,
+      "critical_flagged": 6236,
+      "critical_tp": 3,
+      "critical_fp": 6233,
+      "critical_fn": 953,
+      "critical_tn": 855599
+    }
+  ],
+  "test_pr_auc_difference_graph_minus_transaction_95ci": [
+    0.00023911366398810208,
+    0.0003811696238823926
+  ],
+  "selection": {
+    "selected_model": "graph_enhanced",
+    "criterion": "highest validation PR-AUC",
+    "validation_pr_auc": {
+      "transaction_only": 0.0013353171219821938,
+      "graph_enhanced": 0.0017327302217921548
+    },
+    "pr_auc_difference_graph_minus_transaction_95ci": [
+      0.00034496198945560525,
+      0.00046846906959900874
+    ],
+    "pr_auc_difference_graph_minus_transaction_median": 0.0004041403978521903
+  }
+}
